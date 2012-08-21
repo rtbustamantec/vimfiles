@@ -254,7 +254,7 @@ imap <leader>r <ESC>::RainbowParenthesesToggle<cr>i
 
 " =========== END Plugin Settings =========="
 
-colorscheme rdark
+colorscheme rdark-terminal
 set t_Co=256
 "colorscheme sift
 "colorscheme desert
