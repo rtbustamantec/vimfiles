@@ -59,7 +59,7 @@ set ignorecase
 set smartcase       " if the search string has a upper case character do the search case sensitive
 set incsearch		" do incremental searching
 " clean the search
-nnoremap <leader><space> :noh<cr>
+nnoremap <leader>n :noh<cr>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -142,6 +142,9 @@ au FileType cs compiler gmcs
 " we don't need matlab so associate *.m files with Objective-C syntax
 " highlighting
 au BufNewFile,BufRead *.m setf objc
+
+" correcting the filetype for html filier
+au BufNewFile,BufRead *.html setf htmldjango.html
 
 
 " Don't use Ex mode, use Q for formatting
@@ -254,7 +257,8 @@ imap <leader>r <ESC>::RainbowParenthesesToggle<cr>i
 
 " =========== END Plugin Settings =========="
 
-colorscheme rdark-terminal
+colorscheme molokai
+set background=dark
 set t_Co=256
 "colorscheme sift
 "colorscheme desert
