@@ -6,6 +6,13 @@ Aqui estan mis archivos de configuracion de vim, adaptado a mis nececidades.
 Instalacion
 ===========
 
+* Necesitas:
+  * Vim 7+ (con python y ruby incluidos)
+  * Exuberant Ctags
+  * Ruby y Ruby-dev
+  * Rope y Ropemode
+  * git
+
 * Clonar el repositorio o descargarlo y descomprimir.
 `git clone https://github.com/soloidx/vimfiles.git`
 
@@ -23,12 +30,19 @@ mv vimfiles ~/.vim
 
 * Usar el archivo vimrc como ~/.vimrc.
 
-* Fimalmente inicializa sol submodulos de los plugins en el repo (solo si lo
+* Inicializar los submodulos de los plugins en el repo (solo si lo
 clonaste con git)
 ```
 cd ~/.vim
 git submodule init
 git submodule update
+```
+
+* Instalar las librerias para command-t:
+```
+cd ~/.vim/bundle/command-t/ruby/command-t/
+ruby extconf.rb
+make
 ```
 
 Atajos comunes
@@ -45,8 +59,20 @@ Atajos comunes
 * Tecla <leader> es una tecla que te permite agregar mas atajos en vim, sin
   afectar a los atajos actuales, la tecla leader que configure es coma ",".
 
-Plugins Instalados
-==================
+Otros Shortcuts
+===============
+Un atajo <leader>n significa que primero presiono <leader> y luego "n",
+la tecla <leader> esta configrada como ",".
+
+* <leader>v selecciona el texto pegado recientemente
+* <leader>ev abre la configuracion de vim (vimrc) en un buffer vertical
+* <leader>n abre / cierra NERDtree
+* <leader>j busca la definicion de la variable con rope
+* <leader>l abre / cierra Tagbar
+* <leader>r activa / desactiva rainbow parentheses
+
+Plugins Instalados (TLDR)
+=========================
 
 Minibufexpl
 -----------
@@ -81,6 +107,10 @@ Es un plugin inspirado en el "Go to file" de textmate, abre un buffer en donde
 lista todos los archivos ubicados en el directorio donde esta abierto vim y
 mientras escribes, se realiza una búsqueda y se reducen los resultados al
 criterio de busqueda.
+
+**Dependencias:**
+- Ruby.
+- Ruby-dev.
 
 Puedes revisar la [pagina principal](https://wincent.com/products/command-t)
 
@@ -164,15 +194,3 @@ Es un plugin que permite hacer [zencoding](http://code.google.com/p/zen-coding/)
 en vim.
 
 Puedes revisar la [pagina principal](https://github.com/rstacruz/sparkup)
-
-Otros Shortcuts
-===============
-Un atajo <leader>n significa que primero presiono <leader> y luego "n",
-la tecla <leader> esta configrada como ",".
-
-* <leader>v selecciona el texto pegado recientemente
-* <leader>ev abre la configuracion de vim (vimrc) en un buffer vertical
-* <leader>n abre / cierra NERDtree
-* <leader>j busca la definicion de la variable con rope
-* <leader>l abre / cierra Tagbar
-* <leader>r activa / desactiva rainbow parentheses
