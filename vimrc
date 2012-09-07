@@ -144,7 +144,8 @@ au FileType cs compiler gmcs
 au BufNewFile,BufRead *.m setf objc
 
 " correcting the filetype for html filier
-au BufNewFile,BufRead *.html setf htmldjango.html
+autocmd FileType html set ft=htmldjango.html " For SnipMate
+autocmd FileType htmldjango set ft=htmldjango.html " For SnipMate
 
 
 " Don't use Ex mode, use Q for formatting
@@ -228,7 +229,7 @@ endif
 " ========== Plugin Settings =========="
 
 " Mapping to NERDTree
-nnoremap <C-n> :NERDTreeToggle<cr>
+nnoremap <leader>n :NERDTreeToggle<cr>
 
 " Mini Buffer some settigns."
 let g:miniBufExplMapWindowNavVim = 1
