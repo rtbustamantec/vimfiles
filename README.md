@@ -1,7 +1,7 @@
 vimfiles
 ========
 
-Aqui estan mis archivos de configuracion de vim, adaptado a mis nececidades.
+Aqui estan mis archivos de configuración de vim, adaptado a mis nececidades.
 
 Instalacion
 ===========
@@ -16,7 +16,7 @@ Instalacion
 * Clonar el repositorio o descargarlo y descomprimir.
 `git clone https://github.com/soloidx/vimfiles.git`
 
-* Si es necesario hacer un backup de tu cunfguracion previa de vim.
+* Si es necesario hacer un backup de tu confguración previa de vim.
 ```
 cd ~/
 mv .vimrc .vimrc.old
@@ -30,7 +30,7 @@ mv vimfiles ~/.vim
 
 * Usar el archivo vimrc como ~/.vimrc.
 
-* Inicializar los submodulos de los plugins en el repo (solo si lo
+* Inicializar los submódulos de los plugins en el repo (solo si lo
 clonaste con git)
 ```
 cd ~/.vim
@@ -50,19 +50,18 @@ Atajos comunes
 * Moverte entre ventanas: puedes usar <control-w> y cualquiera de las teclas de
   dirección para desplazarte entre ventanas.
 
-* z-a abre o cierre un fragmento de codigo con folding
+* z-a abre o cierra un fragmento de código con folding
 
-* :sp (:split) divide vim en dos buffers por una linea horizontal
+* :sp (:split) divide vim en dos buffers por una línea horizontal
 
-* :vs (:vsplit) vim en dos buffers por una linea vertical
+* :vs (:vsplit) vim en dos buffers por una línea vertical
 
 * Tecla <leader> es una tecla que te permite agregar mas atajos en vim, sin
-  afectar a los atajos actuales, la tecla leader que configure es coma ",".
+  afectar a los atajos actuales, la tecla leader que configuré es coma ",".
 
 Otros Shortcuts
 ===============
-Un atajo <leader>n significa que primero presiono <leader> y luego "n",
-la tecla <leader> esta configrada como ",".
+Un atajo <leader>n significa que primero presiono <leader> y luego "n".
 
 * <leader>v selecciona el texto pegado recientemente
 * <leader>ev abre la configuracion de vim (vimrc) en un buffer vertical
@@ -70,6 +69,7 @@ la tecla <leader> esta configrada como ",".
 * <leader>j busca la definicion de la variable con rope
 * <leader>l abre / cierra Tagbar
 * <leader>r activa / desactiva rainbow parentheses
+* <leader> c <espacio> comenta / descomenta usando NERDcomenter
 
 Plugins Instalados (TLDR)
 =========================
@@ -78,7 +78,7 @@ Minibufexpl
 -----------
 En un explorador de buffers de vim, trae el concepto de "tabs" por cada archivo
 abierto esta ubicada en una ventana en la parte superior con los nombres de las
-ventanas, puedes cerrar el archivo asociado al tab ubicandote en este y
+ventanas, puedes cerrar el archivo asociado al tab ubicandote en éste y
 presionando la tecla "d".
 
 Puedes revisar la [pagina principal](http://www.vim.org/scripts/script.php?script_id=159)
@@ -86,16 +86,7 @@ Puedes revisar la [pagina principal](http://www.vim.org/scripts/script.php?scrip
 Conque Term
 -----------
 Es un plugin que permite correr programas interactivos desde vim, por ejemplo
-para correr un programa desde la consola puedes ejecutar:
-```
-:ConqueTerm bash
-```
-Puedes revisar la [pagina principal](http://code.google.com/p/conque/)
-
-Conque Term
------------
-Es un plugin que permite correr programas interactivos desde vim, por ejemplo
-para correr un programa desde la consola puedes ejecutar:
+para correr la terminal desde vim escribes:
 ```
 :ConqueTerm bash
 ```
@@ -106,7 +97,7 @@ Command-T (pathogen)
 Es un plugin inspirado en el "Go to file" de textmate, abre un buffer en donde
 lista todos los archivos ubicados en el directorio donde esta abierto vim y
 mientras escribes, se realiza una búsqueda y se reducen los resultados al
-criterio de busqueda.
+criterio de búsqueda.
 
 **Dependencias:**
 - Ruby.
@@ -116,7 +107,7 @@ Puedes revisar la [pagina principal](https://wincent.com/products/command-t)
 
 NERD Commenter (pathogen)
 -------------------------
-Es un plugin que permite comentar un fragmento de codigo dependiendo del
+Es un plugin que permite comentar un fragmento de código dependiendo del
 tipo de archivo en el que estas trabajando.
 
 Puedes revisar la [pagina principal](https://github.com/scrooloose/nerdcommenter)
@@ -124,21 +115,21 @@ Puedes revisar la [pagina principal](https://github.com/scrooloose/nerdcommenter
 NERD Tree (pathogen)
 --------------------
 Es un plugin que permite abrir un buffer con la estructura de directorios
-dependiendo de donde este ubicado el directorio de trabajo en vim, ademas
+dependiendo de donde este ubicado el directorio de trabajo en vim, además
 permite bookmarks.
 
 Puedes revisar la [pagina principal](https://github.com/scrooloose/nerdtree)
 
 Rainbow parentheses (pathogen)
 ------------------------------
-Es un plugin que permite colorear los parentesis, corchetes y llaves
+Es un plugin que permite colorear los paréntesis, corchetes y llaves
 dependiendo de su profundidad.
 
 Puedes revisar la [pagina principal](https://github.com/kien/rainbow_parentheses.vim)
 
 Ropevim (pathogen)
 ------------------
-Es un plugin que permite hacer refactoring de codigo python con vim.
+Es un plugin que permite hacer refactoring de código python con vim.
 
 **Dependencias:**
 - Rope.
@@ -163,7 +154,7 @@ Puedes revisar la [pagina principal](http://www.vim.org/scripts/script.php?scrip
 
 Syntastic (pathogen)
 --------------------
-Es un plugin que permite mostrar errores en la sintaxis del codigo, dependiendo
+Es un plugin que permite mostrar errores en la sintáxis del codigo, dependiendo
 de las herramientas de correccion que tengas instalado (pylint, pep8, pyflakes,
 jslint, etc).
 
@@ -172,7 +163,7 @@ Puedes revisar la [pagina principal](https://github.com/scrooloose/syntastic)
 Tagbar (pathogen)
 -----------------
 Es un plugin que permite mostrar en un buffer lateral un mapa con todas las
-clases y método.
+clases y métodos.
 
 **Dependencias:**
 - Exuberant ctags 5.5.
