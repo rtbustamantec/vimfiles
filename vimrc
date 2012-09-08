@@ -263,3 +263,9 @@ set background=dark
 set t_Co=256
 "colorscheme sift
 "colorscheme desert
+"
+" ========== Private settings ================"
+let s:extrarc = expand($HOME . '/.extra.vimrc')
+if filereadable(s:extrarc)
+    exec ':so ' . s:extrarc
+endif
