@@ -37,3 +37,6 @@
 [submodule "bundle/blogger.vim"]
 	path = bundle/blogger.vim
 	url = git://github.com/ujihisa/blogger.vim.git
+[submodule "bundle/vim-metarw"]
+	path = bundle/vim-metarw
+	url = git://github.com/kana/vim-metarw.git
