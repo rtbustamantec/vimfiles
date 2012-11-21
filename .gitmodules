@@ -37,3 +37,6 @@
 [submodule "bundle/vim-metarw"]
 	path = bundle/vim-metarw
 	url = git://github.com/kana/vim-metarw.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/soloidx/syntastic.git
