@@ -58,8 +58,6 @@ set showmode
 set ignorecase
 set smartcase       " if the search string has a upper case character do the search case sensitive
 set incsearch		" do incremental searching
-" clean the search
-nnoremap <leader>n :noh<cr>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -190,6 +188,9 @@ nnoremap <leader>v V`]
 
 " ,ev Shortcut to edit .vimrc file on the fly on a vertical window.
 nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
+
+" clean the search
+nnoremap <leader>h :noh<cr>
 
 " enables wildmenu (show autocompleted terms in the bar)
 set wildmenu

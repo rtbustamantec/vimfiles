@@ -24,7 +24,7 @@
 	url = https://github.com/soloidx/snipmate.vim.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
+	url = https://github.com/soloidx/syntastic.git
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
