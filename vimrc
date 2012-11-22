@@ -259,9 +259,11 @@ imap <leader>r <ESC>::RainbowParenthesesToggle<cr>i
 
 " =========== END Plugin Settings =========="
 
-colorscheme molokai
-set background=dark
 set t_Co=256
+syntax enable
+set background=light
+"let g:solarized_termcolors=256
+colorscheme solarized
 "colorscheme sift
 "colorscheme desert
 
