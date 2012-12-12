@@ -175,7 +175,7 @@ vnoremap <F1> <ESC>
 " Adding More Shorcuts keys using leader kye.
 " Leader Kye provide separate namespace for specific commands.
 ",W Command to remove white space from a file.
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+nnoremap <leader>W :%s/\s\+//g<cr>:let @/=''<CR>
 
 " ,ft Fold tag, helpful for HTML editing.
 nnoremap <leader>ft vatzf
@@ -222,7 +222,7 @@ if has("gui_running")
 endif
 
 " Source the vimrc file after saving it
-"autocmd bufwritepost .vimrc source ~/.vimrc
+autocmd bufwritepost .vimrc source ~/.vimrc
 
 " ========== END Gvim Settings ==========
 
@@ -263,7 +263,7 @@ set t_Co=256
 syntax enable
 set background=light
 "let g:solarized_termcolors=256
-colorscheme solarized
+"colorscheme solarized
 "colorscheme sift
 "colorscheme desert
 
