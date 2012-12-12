@@ -257,12 +257,15 @@ au Syntax * RainbowParenthesesLoadBraces
 nmap <leader>r <ESC>::RainbowParenthesesToggle<cr>
 imap <leader>r <ESC>::RainbowParenthesesToggle<cr>i
 
+" Vim powerline
+let g:Powerline_symbols = 'fancy'
+
 " =========== END Plugin Settings =========="
 
 set t_Co=256
 syntax enable
-set background=light
-"let g:solarized_termcolors=256
+colorscheme xoria256
+"set background=dark
 "colorscheme solarized
 "colorscheme sift
 "colorscheme desert
