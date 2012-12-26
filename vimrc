@@ -71,6 +71,8 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+" html space configuration
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
 
 set nowrap
 
