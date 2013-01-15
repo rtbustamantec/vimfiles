@@ -262,6 +262,10 @@ imap <leader>r <ESC>::RainbowParenthesesToggle<cr>i
 " Vim powerline
 let g:Powerline_symbols = 'fancy'
 
+" Ctags goTodefinition."
+imap <leader>k <ESC><C-]>
+nmap <leader>k <ESC><C-]>
+
 " =========== END Plugin Settings =========="
 
 set t_Co=256
@@ -276,4 +280,9 @@ colorscheme xoria256
 let s:extrarc = expand($HOME . '/.extra.vimrc')
 if filereadable(s:extrarc)
     exec ':so ' . s:extrarc
+endif
+" ========== Other settings ================"
+let s:otherrc = expand($HOME . '/.vim/other.vimrc')
+if filereadable(s:otherrc)
+    exec ':so ' . s:otherrc
 endif
