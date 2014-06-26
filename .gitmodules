@@ -15,7 +15,7 @@
 	url = https://github.com/kien/rainbow_parentheses.vim.git
 [submodule "bundle/ropevim"]
 	path = bundle/ropevim
-	url = https://github.com/peplin/ropevim.git
+	url = https://github.com/python-rope/ropevim.git
 [submodule "bundle/SimpyFold"]
 	path = bundle/SimpyFold
 	url = https://github.com/tmhedberg/SimpylFold.git
